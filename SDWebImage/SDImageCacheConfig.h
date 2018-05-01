@@ -25,7 +25,7 @@
 /**
  * use memory cache [defaults to YES]
  */
-@property (assign, nonatomic) BOOL shouldCacheImagesInMemory;
+@property (assign, nonatomic, getter=getshouldCacheImagesInMemory) BOOL shouldCacheImagesInMemory;
 
 /**
  * The reading options while reading cache from disk.

@@ -16,13 +16,17 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60 * 60 * 24 * 7; // 1 week
     if (self = [super init]) {
         _shouldDecompressImages = YES;
         _shouldDisableiCloud = YES;
-        _shouldCacheImagesInMemory = YES;
+        _shouldCacheImagesInMemory = NO;
         _diskCacheReadingOptions = 0;
         _diskCacheWritingOptions = NSDataWritingAtomic;
         _maxCacheAge = kDefaultCacheMaxCacheAge;
         _maxCacheSize = 0;
     }
     return self;
+}
+
+- (BOOL) getshouldCacheImagesInMemory {
+    return NO;
 }
 
 @end
