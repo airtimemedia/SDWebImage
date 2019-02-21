@@ -37,7 +37,7 @@ typedef NS_ENUM(NSUInteger, SDImageCacheConfigExpireType) {
 /**
  * Whether or not to use memory cache
  * @note When the memory cache is disabled, the weak memory cache will also be disabled.
- * Defaults to YES.
+ * Defaults to NO.
  */
 @property (assign, nonatomic) BOOL shouldCacheImagesInMemory;
 
